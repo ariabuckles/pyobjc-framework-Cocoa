@@ -191,7 +191,7 @@ class pyobjc_install_lib (install_lib.install_lib):
         else:
             outputs = install_lib.orig.install_lib.get_outputs(self)
 
-        for fn in output:
+        for fn in outputs:
             if 'PyObjCTest' in fn:
                 result[fn] = 1
 
