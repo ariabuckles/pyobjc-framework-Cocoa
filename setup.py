@@ -16,11 +16,8 @@ setup(
     description = "Wrappers for the Cocoa frameworks on Mac OS X",
     packages = [ "Cocoa", "CoreFoundation", "Foundation", "AppKit", "PyObjCTools" ],
     namespace_packages = ['PyObjCTools'],
-    setup_requires = [
-        'pyobjc-core>=2.5.1',
-    ],
-    install_requires = [
-        'pyobjc-core>=2.5.1',
+    dependency_links = [
+        'https://github.com/jacktoole1/pyobjc-core/tarball/master',
     ],
     ext_modules = [
         # CoreFoundation

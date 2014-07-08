@@ -432,7 +432,6 @@ def setup(
         url='http://pyobjc.sourceforge.net',
         platforms = [ plat_name ],
         package_dir = { '': 'Lib', 'PyObjCTest': 'PyObjCTest' },
-        dependency_links = [],
         package_data = { '': ['*.bridgesupport'] },
         test_suite='PyObjCTest',
         zip_safe = False,
